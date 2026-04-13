@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+:root {
+    --primary: #0066CC;
+    --secondary-bg: #E8F5E8;
+    --accent: #00CC66;
+    --text-dark: #333333;
+    --white: #FFFFFF;
+}
+
+body {
+    background-color: var(--secondary-bg);
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #0066CC;
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}
+
+nav a {
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #333333;
+    transition: 0.3s;
+}
+
+button {
+    background: var(--accent);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--secondary-bg);
+    transition: 0.5s;
+
+}
+
+button:active {
+    background-color: #00A652;
+    transform: translateY(2px);
+    box-shadow: 0 2px 6px rgba(0, 102, 204, 0.4);
+}
+
+main {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+}
+
+.hero img {
+    max-width: 300px;
+    height: auto;
+    margin: 30px 0 20px 0;
+
+}
+
+
+
+.hero button:hover {
+    color: var(--secondary-bg);
+    transition: 0.5s;
+
+}
+
+.hero button:active {
+    background-color: #04753d;
+    transform: translateY(2px);
+    box-shadow: 0 2px 6px rgba(0, 102, 204, 0.4);
+}
+
+
+.service {
+    text-align: left;
+}
+
+.service h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.service p {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.service button {
+    background-color: var(--accent);
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.service button:hover {
+    color: var(--secondary-bg);
+    transition: 0.5s;
+
+}
+
+.service button:active {
+    background-color: #04753d;
+    transform: translateY(2px);
+    box-shadow: 0 2px 6px rgba(0, 102, 204, 0.4);
+
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card-item {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: calc(33.33% - 20px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s
+}
+
+.card-item:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-item h3 {
+
+    font-size: 25px;
+    font-weight: 700;
+
+}
+
+.card-item p {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+}
+
+.flex-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.lista {
+    list-style: none;
+    margin-top: 10px;
+    background-color: #00A652;
+    max-width: 120px;
+    padding: 5px;
+    border-radius: 8px;
+
+}
+
+.lista a {
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--text-dark);
+    cursor: pointer;
+}
+
+.lista a:hover {
+    color: var(--white);
+    transition: 0.5s;
+
+}
+
+.flex-card img {
+    width: 200px;
+    margin-left: 10px;
+
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background: #00CC66;
+
+}
+
+footer h2 {
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 700;
+
+}
+
+.contatos {
+    width: 100%;
+    margin-left: 200px;
+
+}
+
+.contatos p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .card-item {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
